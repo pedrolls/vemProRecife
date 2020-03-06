@@ -6,7 +6,7 @@
 const axios = require('axios');
 const linkBuscarMuseus = require('./Constantes/Constantes');
 
-exports.consultarMuseus = (req, res) => {
+exports.listarTodosOsMuseus = (req, res) => {
     axios.get(linkBuscarMuseus.linkMuseu)
     .then( (response, err) => {
             if (err){
